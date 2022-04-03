@@ -1,0 +1,49 @@
+<project
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.mrlocalhost</groupId>
+  <artifactId>MrSpotifyClone</artifactId>
+  <version>1.0</version>
+  <packaging>war</packaging>
+  <name>MrSpotifyClone</name>
+  <description>Java based clone web client of Spotify</description>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.10.1</version>
+        <configuration>
+          <release>18</release>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.3.2</version>
+      </plugin>
+    </plugins>
+  </build>
+  <properties>
+  	<httpclient.version>4.5.13</httpclient.version>
+  </properties>
+  <dependencies>
+  	<dependency> <!--httpclient-->
+  		<groupId>org.apache.httpcomponents</groupId>
+  		<artifactId>httpclient</artifactId>
+  		<version>${httpclient.version}</version>
+  	</dependency>
+  	<dependency> <!--jakarta.servlet-api-->
+	    <groupId>jakarta.servlet</groupId>
+	    <artifactId>jakarta.servlet-api</artifactId>
+	    <version>5.0.0</version>
+	    <scope>provided</scope>
+	</dependency>
+	<dependency> <!--spotify-web-api-java-->
+		<groupId>se.michaelthelin.spotify</groupId>
+		<artifactId>spotify-web-api-java</artifactId>
+		<version>7.0.0</version>
+	</dependency>
+  </dependencies>
+</project>

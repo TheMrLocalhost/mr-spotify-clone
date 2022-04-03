@@ -1,0 +1,132 @@
+.background {
+	background: #000;
+	color: #EEEEEE;
+	font-size: 1.2em;
+	font-family: sans-serif;
+}
+.horizontal-center {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	/*border: 0.1em solid #FFFF00;*/
+	padding: 10px;
+}
+.vertical-center {
+	border: 0.2em solid #04AA6D;
+	background: #0E0E0E;
+	padding: 0.2em;
+	border-radius: 12px;
+	margin: 0.2em;
+}
+.centered-object {
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+.slide-container {
+	position: relative;
+	display: block;
+	margin : 0 auto;
+}
+.volume-slider {
+	appearance: none;
+	background: #d3d3d3;
+	border-radius: 12px;
+	height: 15px;
+	opacity: 0.7;
+	outline: none;
+	transition: opacity 0.2s;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+.volume-slider:hover {
+	opacity: 1;
+}
+.volume-slider::-webkit-slider-thumb {
+	appearance: none;
+	background: #04AA6D;
+	cursor: pointer;
+	border-radius: 12px;
+	height: 15px;
+	width: 15px;
+}
+.volume-slider::-moz-range-thumb {
+	background: #04AA6D;
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+}
+.spotify-login-button {
+	background: #04AA6D;
+	cursor: pointer;
+	text-align: center;
+	border-radius: 12px;
+	padding: 0.5em;
+	margin: 0.75em;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 1.0em;
+}
+.spotify-login-button:hover {
+	opacity: 1;
+}
+.media-buttons {
+	background: #04AA6D;
+	cursor: pointer;
+	text-align: center;
+	border-radius: 12px;
+	padding: 0em;
+	justify-content: center;
+	align-items: center;
+	width: 1.5em;
+	height: 1.5em;
+	margin: 0 auto;
+	font-size: 30px;
+	vertical-align: middle
+}
+.media-buttons:hover {
+	opacity: 1;
+}
+.volumeGroup {
+	vertical-align: middle;
+	margin-top: auto;
+	margin-bottom: auto;
+	padding-top: auto;
+	padding-bottom: auto;
+}
+.album-cover {
+	border: 0.1em solid #04AA6D;
+	border-radius: 12px;
+	width:256px;
+	height:256px;
+ 	margin-top: 0.5em;
+ 	margin-bottom: 0.5em;
+ 	display: block;
+}
+.media-button-group {
+	border: 0.1em solid #ffffff;
+	background: #4f4f4f;
+	padding: 0.3em;
+	border-radius: 12px;
+	margin: 0.2em;
+}
+.media-information {
+	margin: 0.2em;
+	display: none;
+}
+.login-prompt {
+	display: none;
+	margin-bottom: 1.0em;
+	text-align: center;
+	margin-left: 1.0em;
+	margin-right: 1.0em;
+}
+.user-information {
+	/*border: 0.1em solid #00FFFF;*/
+	margin: 0.2em;
+	display: none;
+	font-size: 0.8em;
+	border-bottom: 0.1em solid #FFF;
+}
+
