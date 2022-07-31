@@ -18,19 +18,23 @@ public class LogWriter implements Serializable {
 		logger.setLevel(logLevel);
 	}
 	public void log(String msg) {
-		if (logger.isLoggable(Level.INFO))
+		if (logger.isLoggable(Level.INFO)) {
 			logger.log(Level.INFO, msg);
+		}
 	}
 	public void error(String msg) {
-		if (logger.isLoggable(Level.SEVERE))
+		if (logger.isLoggable(Level.SEVERE)) {
 			logger.log(Level.SEVERE, msg);
+		}
 	}
 	public void warning(String msg) {
-		if (logger.isLoggable(Level.WARNING))
+		if (logger.isLoggable(Level.WARNING)) {
 			logger.log(Level.WARNING, msg);
+			}
 	}
 	public void errorTrace(Exception e) {
-		if (logger.isLoggable(Level.SEVERE))
+		if (logger.isLoggable(Level.SEVERE)) {
 			logger.log(Level.SEVERE, Arrays.toString(e.getStackTrace()));
+		}
 	}
 }

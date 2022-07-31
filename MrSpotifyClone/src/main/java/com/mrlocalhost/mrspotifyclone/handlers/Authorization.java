@@ -64,9 +64,9 @@ public class Authorization extends HttpServlet implements Serializable {
 		}
 		
 		SpotifyApi spotifyApi = new SpotifyApi.Builder()
-				.setAccessToken(spotifyApiHandler.getAccessToken())
-				.setRefreshToken(spotifyApiHandler.getRefreshToken())
-				.build();
+			.setAccessToken(spotifyApiHandler.getAccessToken())
+			.setRefreshToken(spotifyApiHandler.getRefreshToken())
+			.build();
 		User user = null;
 		String userName = "";
 		try {
